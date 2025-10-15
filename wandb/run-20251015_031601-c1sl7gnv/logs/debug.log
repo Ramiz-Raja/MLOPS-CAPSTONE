@@ -1,0 +1,24 @@
+2025-10-15 03:16:01,296 INFO    MainThread:16524 [wandb_setup.py:_flush():81] Current SDK version is 0.22.2
+2025-10-15 03:16:01,296 INFO    MainThread:16524 [wandb_setup.py:_flush():81] Configure stats pid to 16524
+2025-10-15 03:16:01,296 INFO    MainThread:16524 [wandb_setup.py:_flush():81] Loading settings from C:\Users\Rameez Raja\.config\wandb\settings
+2025-10-15 03:16:01,297 INFO    MainThread:16524 [wandb_setup.py:_flush():81] Loading settings from C:\Users\Rameez Raja\Downloads\mlops-capstone\wandb\settings
+2025-10-15 03:16:01,297 INFO    MainThread:16524 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-10-15 03:16:01,297 INFO    MainThread:16524 [wandb_init.py:setup_run_log_directory():705] Logging user logs to C:\Users\Rameez Raja\Downloads\mlops-capstone\wandb\run-20251015_031601-c1sl7gnv\logs\debug.log
+2025-10-15 03:16:01,299 INFO    MainThread:16524 [wandb_init.py:setup_run_log_directory():706] Logging internal logs to C:\Users\Rameez Raja\Downloads\mlops-capstone\wandb\run-20251015_031601-c1sl7gnv\logs\debug-internal.log
+2025-10-15 03:16:01,299 INFO    MainThread:16524 [wandb_init.py:init():832] calling init triggers
+2025-10-15 03:16:01,299 INFO    MainThread:16524 [wandb_init.py:init():837] wandb.init called with sweep_config: {}
+config: {'n_estimators': 100, 'max_depth': 7, 'test_size': 0.2, 'random_state': 42, '_wandb': {}}
+2025-10-15 03:16:01,299 INFO    MainThread:16524 [wandb_init.py:init():880] starting backend
+2025-10-15 03:16:03,573 INFO    MainThread:16524 [wandb_init.py:init():883] sending inform_init request
+2025-10-15 03:16:03,650 INFO    MainThread:16524 [wandb_init.py:init():891] backend started and connected
+2025-10-15 03:16:03,651 INFO    MainThread:16524 [wandb_init.py:init():961] updated telemetry
+2025-10-15 03:16:03,654 INFO    MainThread:16524 [wandb_init.py:init():985] communicating run to backend with 90.0 second timeout
+2025-10-15 03:16:05,031 INFO    MainThread:16524 [wandb_init.py:init():1036] starting run threads in backend
+2025-10-15 03:16:05,335 INFO    MainThread:16524 [wandb_run.py:_console_start():2509] atexit reg
+2025-10-15 03:16:05,336 INFO    MainThread:16524 [wandb_run.py:_redirect():2357] redirect: wrap_raw
+2025-10-15 03:16:05,336 INFO    MainThread:16524 [wandb_run.py:_redirect():2426] Wrapping output streams.
+2025-10-15 03:16:05,337 INFO    MainThread:16524 [wandb_run.py:_redirect():2449] Redirects installed.
+2025-10-15 03:16:05,342 INFO    MainThread:16524 [wandb_init.py:init():1076] run started, returning control to user process
+2025-10-15 03:16:05,676 INFO    MainThread:16524 [wandb_run.py:_config_callback():1392] config_cb ('_wandb', 'visualize', 'confusion_matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'confusion_matrix_table'}], 'fields': []}]}]}}} None
+2025-10-15 03:16:15,682 INFO    wandb-AsyncioManager-main:16524 [service_client.py:_forward_responses():80] Reached EOF.
+2025-10-15 03:16:15,683 INFO    wandb-AsyncioManager-main:16524 [mailbox.py:close():137] Closing mailbox, abandoning 1 handles.

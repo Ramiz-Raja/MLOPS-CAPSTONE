@@ -1,0 +1,40 @@
+name: Deploy to Google Cloud Run
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Authenticate to Google Cloud
+      uses: google-github-actions/auth@v2
+      with:
+        credentials_json: ${{ secrets.GCP_SERVICE_ACCOUNT }}
+
+    - name: Set up Google Cloud SDK
+      uses: google-github-actions/setup-gcloud@v2
+
+    - name: Configure Docker
+      run: gcloud auth configure-docker
+
+    - name: Build and Push Backend Image
+      run: |
+        docker build -t gcr.io/${{ secrets.GCP_PROJECT_ID }}/titanic-backend -f Dockerfile.backend .
+        docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/titanic-backend
+
+    - name: Build and Push Frontend Image
+      run: |
+        docker build -t gcr.io/${{ secrets.GCP_PROJECT_ID }}/titanic-frontend -f Dockerfile.frontend .
+        docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/titanic-frontend
+
+    - name: Deploy to Cloud Run
+      run: |
+        gcloud run deploy titanic-backend --image gcr.io/${{ secrets.GCP_PROJECT_ID }}/titanic-backend --platform managed --region us-central1 --allow-unauthenticated
+        gcloud run deploy titanic-frontend --image gcr.io/${{ secrets.GCP_PROJECT_ID }}/titanic-frontend --platform managed --region us-central1 --allow-unauthenticated

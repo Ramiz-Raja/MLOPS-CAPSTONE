@@ -1,0 +1,12 @@
+{"time":"2025-10-15T02:15:51.6584422-07:00","level":"INFO","msg":"stream: starting","core version":"0.22.2"}
+{"time":"2025-10-15T02:15:52.2498395-07:00","level":"INFO","msg":"stream: created new stream","id":"gc6h5wrz"}
+{"time":"2025-10-15T02:15:52.2498395-07:00","level":"INFO","msg":"handler: started","stream_id":"gc6h5wrz"}
+{"time":"2025-10-15T02:15:52.256274-07:00","level":"INFO","msg":"stream: started","id":"gc6h5wrz"}
+{"time":"2025-10-15T02:15:52.256274-07:00","level":"INFO","msg":"sender: started","stream_id":"gc6h5wrz"}
+{"time":"2025-10-15T02:15:52.256274-07:00","level":"INFO","msg":"writer: started","stream_id":"gc6h5wrz"}
+{"time":"2025-10-15T02:15:58.0378678-07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run metadata","runtime_seconds":5.2308725},{"desc":"uploading artifact titanic-rf","runtime_seconds":1.9602068,"subtasks":[{"desc":"rf_titanic.joblib","runtime_seconds":0.5513359,"progress":"47.0KB/47.0KB"}]}],"total_operations":2}}
+{"time":"2025-10-15T02:16:00.2781267-07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-15T02:16:01.0362951-07:00","level":"INFO","msg":"stream: closing","id":"gc6h5wrz"}
+{"time":"2025-10-15T02:16:01.0362951-07:00","level":"INFO","msg":"handler: closed","stream_id":"gc6h5wrz"}
+{"time":"2025-10-15T02:16:01.0443394-07:00","level":"INFO","msg":"sender: closed","stream_id":"gc6h5wrz"}
+{"time":"2025-10-15T02:16:01.0443394-07:00","level":"INFO","msg":"stream: closed","id":"gc6h5wrz"}
